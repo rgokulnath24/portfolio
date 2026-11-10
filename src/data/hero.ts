@@ -10,7 +10,7 @@ export const heroData = {
 
   actions: [
     {
-      label: "View my work →",
+      label: "View my work",
       href: "#work",
       variant: "primary",
     },

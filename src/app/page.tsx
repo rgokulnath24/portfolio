@@ -1,5 +1,7 @@
 import { About } from "../components/layout/about";
+import Activity from "../components/layout/activity";
 import { Contact } from "../components/layout/contact";
+import Demo from "../components/layout/demo";
 import { Experience } from "../components/layout/experience";
 import { Footer } from "../components/layout/footer";
 import { Hero } from "../components/layout/hero";
@@ -20,6 +22,8 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      {/* <Demo/> */}
+      {/* <Activity/> */}
     </>
   );
 }

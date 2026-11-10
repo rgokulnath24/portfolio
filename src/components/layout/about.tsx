@@ -10,29 +10,61 @@ export function About() {
       className="border-t border-[var(--border)] py-24 sm:py-32"
     >
       <div className="mx-auto max-w-6xl px-6">
-
         <div className="grid items-center gap-14 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
 
-          {/* Profile */}
           <div className="relative mx-auto w-full max-w-sm lg:mx-0">
 
             {/* Image */}
             <div className="group relative aspect-[4/5] overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface)]">
 
               <Image
-                src="/profile.jpg"
+                src="/profile.jpeg"
                 alt="Gokulnath - Full Stack Developer"
                 fill
                 priority
-                className="object-cover object-center grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-[1.03]"
+                className="
+      object-cover object-center
+      opacity-0 scale-[0.98]
+      transition-all duration-700 ease-out
+      group-hover:opacity-100
+      group-hover:scale-[1.02]
+    "
               />
 
-              {/* Overlay */}
+              <Image
+                src="/profile-code.jpeg"
+                alt="Code Silhouette"
+                fill
+                priority
+                className="
+      object-cover object-center
+      transition-all duration-700 ease-out
+      group-hover:opacity-10
+      group-hover:scale-[1.04]
+    "
+              />
+
+              {/* Soft Glow */}
+              <div
+                className="
+      absolute inset-0
+      opacity-0
+      transition-opacity duration-700
+      group-hover:opacity-100
+      bg-gradient-to-tr
+      from-cyan-500/5
+      via-transparent
+      to-blue-500/5
+      pointer-events-none
+    "
+              />
+
+              {/* Bottom Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
               {/* Location */}
-              <div className="absolute bottom-5 left-5">
-                <div className="flex items-center gap-2 rounded-full border border-white/10 bg-black/30 px-3 py-2 text-xs text-white/80 backdrop-blur-md">
+              <div className="absolute bottom-5 left-5 z-10">
+                <div className="flex items-center gap-2 rounded-full border border-white/10 bg-black/30 px-3 py-2 text-xs text-white/80 backdrop-blur-md transition-transform duration-500 group-hover:-translate-y-1">
                   <MapPin className="h-3.5 w-3.5" />
                   Chennai, India
                 </div>

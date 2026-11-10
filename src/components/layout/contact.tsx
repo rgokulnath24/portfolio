@@ -98,7 +98,6 @@ export function Contact() {
 
         </div>
 
-        {/* Bottom CTA */}
         <div className="mt-16 flex flex-col justify-between gap-6 border-t border-[var(--border)] pt-8 sm:flex-row sm:items-center">
 
           <p className="text-sm text-[var(--subtle)]">

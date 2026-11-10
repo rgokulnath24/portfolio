@@ -9,10 +9,9 @@ import { heroData } from "@/src/data/hero";
 export function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden">
-
       {/* Background */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-[var(--accent)]/5 blur-3xl" />
+        <div className="absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-[var(--accent)]/5 blur-xl" />
 
         <div
           className="absolute inset-0 opacity-[0.025]"
@@ -27,11 +26,8 @@ export function Hero() {
       <div className="relative mx-auto flex min-h-screen max-w-6xl items-center px-6 pb-20 pt-28 sm:pt-32">
 
         <div className="grid w-full items-center gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
-
-          {/* Left */}
           <div>
 
-            {/* Eyebrow */}
             <div className="mb-6 flex items-center gap-3">
               <span className="h-px w-8 bg-[var(--accent)]" />
 
@@ -54,7 +50,6 @@ export function Hero() {
               {heroData.description}
             </p>
 
-            {/* Actions */}
             <div className="mt-10 flex flex-wrap items-center gap-3">
               {heroData.actions.map((action) => {
                 const isPrimary = action.variant === "primary";
@@ -79,7 +74,6 @@ export function Hero() {
               })}
             </div>
 
-            {/* Availability */}
             <div className="mt-10 inline-flex items-center gap-3 rounded-full border border-[var(--border)] bg-[var(--card)]/60 px-3.5 py-2 backdrop-blur-sm">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--cyan)] opacity-50" />
@@ -191,7 +185,6 @@ export function Hero() {
                 </div>
               </div>
 
-              {/* Status */}
               <div className="border-t border-[var(--border)] px-6 py-4">
                 <div className="flex items-center justify-between">
 
